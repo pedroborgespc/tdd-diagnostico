@@ -1,15 +1,12 @@
 mainString = print(input('Digite seu texto:'))
 
-def replaceMultiple(mainString, toBeReplaces, newString):
-    # Iterate over the strings to be replaced
-    for elem in toBeReplaces:
-        # Check if string is in the main string
-        if elem in mainString:
-            # Replace the string
-            mainString = mainString.replace(elem, newString)
+def replaceMultiple(string_principal, substituir, newString):
+    for elem in substituir:
+        if elem in string_principal:
+            string_principal = string_principal.replace(elem, newString)
 
-    return mainString
+    return string_principal
 
-print(mainString)
+print(string_principal)
 
 
